@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="656.0" stylesheets="@Stylesheets2.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.CartController">
+   <children>
+      <ImageView fitHeight="75.0" fitWidth="91.0" layoutX="562.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: src-over;">
+         <image>
+            <Image url="@../../../Images/Cart.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="32.0" prefWidth="657.0" styleClass="top-bar">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Picture1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="1.0" prefHeight="28.0" prefWidth="124.0" text="CampusCart" textFill="#8a00e6">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="CartBackBtn" layoutX="595.0" layoutY="2.0" mnemonicParsing="false" onAction="#CartBackBtnOnAction" prefHeight="25.0" prefWidth="47.0" text="Back" />
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="Scroller" layoutX="14.0" layoutY="45.0" prefHeight="288.0" prefWidth="541.0">
+         <content>
+            <VBox fx:id="ScrollerVbox" prefWidth="518.0" />
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutX="-1.0" layoutY="363.0" prefHeight="51.0" prefWidth="657.0" styleClass="bottom-bar">
+         <children>
+            <Button fx:id="BuyBtn" layoutX="290.0" layoutY="5.0" mnemonicParsing="false" onAction="#BuyBtnOnAction" prefHeight="39.0" prefWidth="131.0" styleClass="addBtn" text="Buy">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="total_price" layoutX="9.0" layoutY="8.0" prefHeight="39.0" prefWidth="171.0" text="Total:">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

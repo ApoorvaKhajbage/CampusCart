@@ -1,0 +1,36 @@
+.parent{
+    -fx-background-color: white;
+}
+.sidebar{
+    -fx-background-color: #8a00e6;
+}
+.loginBtn{
+    -fx-background-color: #8a00e6;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 10px;
+}
+.loginBtn:hover{
+    -fx-background-color: transparent;
+    -fx-text-fill: #6747cd;
+    -fx-border-color: #6747cd;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.closeBtn{
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+}
+.closeBtn:hover{
+    -fx-background-color: red;
+
+}
+.backBtn{
+    -fx-background-color: #6747cd;
+    -fx-text-fill: white;
+}
+.backBtn:hover{
+    -fx-background-color: blue;
+    -fx-text-fill: black;
+}

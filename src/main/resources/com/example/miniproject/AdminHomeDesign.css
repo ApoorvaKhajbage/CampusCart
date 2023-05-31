@@ -1,0 +1,55 @@
+.sidebar{
+    -fx-background-color: #8a00e6;
+}
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.close:hover{
+    -fx-background-color: #ff496a;
+}
+.SearchBtn{
+    -fx-background-color: #8a00e6;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 10px;
+}
+.SearchBtn:hover{
+    -fx-background-color: transparent;
+    -fx-text-fill: #6747cd;
+    -fx-border-color: #6747cd;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.top-panel{
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+.card{
+    -fx-background-color:#6747cd;
+}
+
+.card:hover{
+    -fx-background-color: #B799FF;
+    -fx-text-fill: black;
+    -fx-border-color: #6747cd;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.side-Btn{
+    -fx-border-radius: 15px;
+    -fx-background-color: #6747cd;
+}
+.side-Btn:hover{
+    -fx-border-radius: 15px;
+    -fx-background-color: #B799FF;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+

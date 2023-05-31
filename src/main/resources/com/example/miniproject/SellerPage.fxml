@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" stylesheets="@AdminHomeDesign.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.SellerPageController">
+   <children>
+      <AnchorPane prefHeight="29.0" prefWidth="700.0" styleClass="top-panel">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="50.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Picture1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="7.0" text="CampusCart" textFill="#5c0696">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="SellerBackBtn" layoutX="648.0" layoutY="5.0" mnemonicParsing="false" onAction="#SellerBackBtnOnAction" text="Back" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="39.0" layoutY="59.0" prefHeight="48.0" prefWidth="235.0" text="Name of book">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="39.0" layoutY="124.0" prefHeight="48.0" prefWidth="235.0" text="ISBN No.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="39.0" layoutY="186.0" prefHeight="48.0" prefWidth="235.0" text="Price">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="39.0" layoutY="251.0" prefHeight="48.0" prefWidth="235.0" text="Edition">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="320.0" prefHeight="48.0" prefWidth="235.0" text="Year of Purchase">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NameofBook" layoutX="281.0" layoutY="64.0" prefHeight="39.0" prefWidth="347.0" />
+      <TextField fx:id="ISBNno" layoutX="281.0" layoutY="129.0" prefHeight="39.0" prefWidth="347.0" />
+      <TextField fx:id="Price" layoutX="281.0" layoutY="198.0" prefHeight="39.0" prefWidth="347.0" />
+      <TextField fx:id="edition" layoutX="281.0" layoutY="260.0" prefHeight="39.0" prefWidth="347.0" />
+      <TextField fx:id="yrofpurchase" layoutX="281.0" layoutY="325.0" prefHeight="39.0" prefWidth="347.0" />
+      <Button fx:id="AddBtn" contentDisplay="CENTER" layoutX="316.0" layoutY="437.0" mnemonicParsing="false" onAction="#AddBtnOnAction" prefHeight="39.0" prefWidth="81.0" styleClass="SearchBtn" text="ADD" />
+      <Label alignment="CENTER" layoutX="31.0" layoutY="381.0" prefHeight="48.0" prefWidth="235.0" text="Category">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="category" layoutX="281.0" layoutY="385.0" prefHeight="39.0" prefWidth="347.0" />
+      <Label fx:id="ISBNError" alignment="CENTER" layoutX="285.0" layoutY="172.0" prefHeight="17.0" prefWidth="340.0" textFill="#eb1212">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceError" alignment="CENTER" layoutX="281.0" layoutY="242.0" prefHeight="17.0" prefWidth="340.0" textFill="#eb1212">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="yopError" alignment="CENTER" layoutX="285.0" layoutY="360.0" prefHeight="17.0" prefWidth="340.0" textFill="#eb1212">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="CatgError" alignment="CENTER" layoutX="281.0" layoutY="421.0" prefHeight="17.0" prefWidth="340.0" textFill="#eb1212">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

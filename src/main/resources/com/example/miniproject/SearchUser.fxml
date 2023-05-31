@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" styleClass="parent" stylesheets="@Stylesheets.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.SearchUserController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="287.0" styleClass="sidebar" stylesheets="@Stylesheets.css" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="50.0" layoutY="186.0" prefHeight="53.0" prefWidth="210.0" text="Campus Cart" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label layoutX="53.0" layoutY="342.0" prefHeight="31.0" prefWidth="203.0" text="Copyright (c). All rights reserved" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="142.0" fitWidth="133.0" layoutX="70.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Picture1.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="312.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="79.0" layoutY="144.0" prefHeight="55.0" prefWidth="159.0" text="Search User" textFill="#8a00e6">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserPhone" layoutX="70.0" layoutY="223.0" prefHeight="41.0" prefWidth="219.0" promptText="Enter Phone Number to search" />
+            <Button fx:id="SearchUser" layoutX="134.0" layoutY="312.0" mnemonicParsing="false" onAction="#SearchUserOnAction" prefHeight="40.0" prefWidth="71.0" styleClass="loginBtn" text="Search" />
+            <Button fx:id="SearchUserBackBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#SearchUserBackBtnOnAction" styleClass="backBtn" text="Back" />
+            <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="23.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/phone.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="SearchResult" alignment="CENTER" layoutX="59.0" layoutY="217.0" prefHeight="36.0" prefWidth="221.0" textFill="#e60b0b">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <ImageView fitHeight="133.0" fitWidth="155.0" layoutX="92.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: src-over;">
+               <image>
+                  <Image url="@../../../Images/search.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
